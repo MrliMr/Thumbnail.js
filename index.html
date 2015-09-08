@@ -10,23 +10,26 @@
 				width: 200px;
 				overflow: hidden;
 				border: 1px solid black;
-				margin-top: 10px;
-				
+				margin-top: 10px;				
 			}
 		</style>
 	</head>
 
 	<body>
 		<div>
-			<img class="thumbImg" src="http://placehold.it/200x100" />
+			<img class="MLthumbImg" src="http://placehold.it/200x100" />
 		</div>
 		<div>
-			<img src="http://placehold.it/100x200" />
+			<img class="MLthumbImg" src="http://placehold.it/100x200" />
 		</div>
 		<div>
-			<img src="http://placehold.it/200x200" alt="" />
+			<img class="MLthumbImg" src="http://placehold.it/200x200" alt="" />
 		</div>
 		<script src="js/thumbnail.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var test = new Thumbnail();
+			test.mode();
+		</script>
 	</body>
 
 </html>
