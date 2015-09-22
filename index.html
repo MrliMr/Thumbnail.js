@@ -6,24 +6,45 @@
 		<title></title>
 		<style type="text/css">
 			div{
-				height: 100px;
+				height: 200px;
 				width: 200px;
 				overflow: hidden;
 				border: 1px solid black;
-				margin-top: 10px;				
+				margin-top: 10px;
+				position: relative;				
+			}
+			img.center{
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			p{
+				color: red;
+				font-size: 30px;
 			}
 		</style>
 	</head>
 
 	<body>
+		<h1>铺满容器，隐藏超出部分隐藏</h1>
 		<div>
-			<img class="MLthumbImg" src="http://placehold.it/200x100" />
+			<img class="MLthumbImg center" src="http://lorempixel.com/850/200/" />
 		</div>
 		<div>
-			<img class="MLthumbImg" src="http://placehold.it/100x200" />
+			<img class="MLthumbImg" src="http://lorempixel.com/200/850/" />
 		</div>
-		<div>
-			<img class="MLthumbImg" src="http://placehold.it/200x200" alt="" />
+		<h1>图片等比缩放显示在容器内</h1>
+		<div style="display: table;">
+			<span style="display: table-cell;vertical-align: middle;">
+				<img style="max-height: 100%; max-width: 100%;" src="http://lorempixel.com/850/200/" />
+			</span>
+
+		</div>
+		<div style="text-align: center;">
+			
+				<img style="height: 100%; " src="http://lorempixel.com/200/850/" />
+		
+
 		</div>
 		<script src="js/thumbnail.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
